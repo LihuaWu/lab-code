@@ -19,9 +19,21 @@ def test_grepLine():
 	b = grepText.GrepText()
 	print b.grepLine(s)
 
+def test_extractor():
+	b = grepText.Extractor("cat data.1000 |grep 'time use'")	
+	for i in  b.log_list:
+		print i
+
+def test_sender():	
+	b = grepText.Extractor("cat data.1000 |grep 'time use'")	
+	logger = grepText.getLogger('will-laptop', 'localhost')
+	s = grepText.Sender(b.log_list, logger)
+	
 
 if __name__ == '__main__':
 	#test_grepText()
-	test_grepLine()
+	#test_grepLine()
+	#test_extractor()
+	test_sender()
 	pass
 
