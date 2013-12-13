@@ -25,7 +25,7 @@ def test_extractor():
 		print i
 
 def test_sender():	
-	b = grepText.Extractor("cat data.1000 |grep 'time use'")	
+	b = grepText.Extractor("cat data |grep 'time use'")	
 	logger = grepText.getLogger('will-laptop', 'localhost')
 	s = grepText.Sender(b.log_list, logger)
 	
