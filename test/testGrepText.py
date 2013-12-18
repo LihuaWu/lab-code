@@ -33,8 +33,8 @@ def test_sender():
 
 if __name__ == '__main__':
 	#test_grepText()
-	test_grepLine()
+	#test_grepLine()
 	#test_extractor()
-	#test_sender()
+	test_sender()
 	pass
 

@@ -1,0 +1,100 @@
+NOTICE: 12-11 15:45:14:  newsdiproxy. * 2007337312 [crawl_a_page]: command:GET http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu HTTP/1.1
+Host: www.chinanews.com
+X-WISETC-PARAM-nocache:
+Accept-Encoding:gzip, deflate
+Accept-Language: zh-cn
+User-Agent: Baiduspider-news+(+http://www.baidu.com/search/spider.htm)
+Connection: close
+
+
+TRACE: 12-11 15:45:14:  newsdiproxy. * 2007337312 [crawl_a_page]: parse Content-Length  Content-Length:75605 
+TRACE: 12-11 15:45:14:  newsdiproxy. * 2007337312 [work_thread_func]:  crawl the single page [http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] use time [0]
+TRACE: 12-11 15:45:14:  newsdiproxy. * 2007337312 [news_html_parse]: title node selected,url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] anchor[] xpath[(null)$0->h1$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] title[十八届三中全会今闭幕 中国改革将迈入新时代 ] a_dist[0.000000] t_dist[0.854167] score[1.281250] skip[58] total[4623]
+TRACE: 12-11 15:45:14:  newsdiproxy. * 2007337312 [news_html_parse]: time node selected,url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] str_time[2013年11月12日 00:02] xpath[(null)$0->div.left-t$0->div.left-time$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] pubtime[1384185720] 
+TRACE: 12-11 15:45:14:  newsdiproxy. * 2007337312 [news_html_parse]: text node selected, url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] xpath[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] belif[0.956730], extract at[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] iNHP.iTpl 1
+NOTICE: 12-11 15:45:14:  newsdiproxy. * 2007337312 [news_html_parse]: url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu],not hit template 
+NOTICE: 12-11 15:45:15:  newsdiproxy. * 2007337312 [news_html_parse]: extract info, url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu], title[(null)$0->h1$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], time[(null)$0->div.left-t$0->div.left-time$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], text[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], extract[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html],url2[(null)]
+NOTICE: 12-11 15:45:15:  newsdiproxy. * 2007337312 [put_npt_premcpack]: unknown imgurl:i3.chinanews.com/2011/news/images/1.png
+NOTICE: 12-11 15:45:15:  newsdiproxy. * 2007337312 [work_thread_func]: send newsdi of url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] ok,error no[0] all time use[1] 			       	process time use[1] queue wait time [0] queue len is[0] re_crawl_page_times [0]
+NOTICE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [crawl_a_page]: command:GET http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu HTTP/1.1
+Host: www.chinanews.com
+X-WISETC-PARAM-nocache:
+Accept-Encoding:gzip, deflate
+Accept-Language: zh-cn
+User-Agent: Baiduspider-news+(+http://www.baidu.com/search/spider.htm)
+Connection: close
+
+
+TRACE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [crawl_a_page]: parse Content-Length  Content-Length:75605 
+TRACE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [work_thread_func]:  crawl the single page [http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] use time [0]
+TRACE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [news_html_parse]: title node selected,url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] anchor[] xpath[(null)$0->h1$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] title[十八届三中全会今闭幕 中国改革将迈入新时代 ] a_dist[0.000000] t_dist[0.854167] score[1.281250] skip[58] total[4623]
+TRACE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [news_html_parse]: time node selected,url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] str_time[2013年11月12日 00:02] xpath[(null)$0->div.left-t$0->div.left-time$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] pubtime[1384185720] 
+TRACE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [news_html_parse]: text node selected, url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] xpath[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] belif[0.956730], extract at[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] iNHP.iTpl 1
+NOTICE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [news_html_parse]: url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu],not hit template 
+NOTICE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [news_html_parse]: extract info, url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu], title[(null)$0->h1$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], time[(null)$0->div.left-t$0->div.left-time$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], text[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], extract[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html],url2[(null)]
+NOTICE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [put_npt_premcpack]: unknown imgurl:i3.chinanews.com/2011/news/images/1.png
+NOTICE: 12-11 15:45:36:  newsdiproxy. * 1566763360 [work_thread_func]: send newsdi of url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] ok,error no[0] all time use[0] 			       	process time use[0] queue wait time [0] queue len is[0] re_crawl_page_times [0]
+NOTICE: 12-11 16:15:37:  newsdiproxy. * 1493334368 [crawl_a_page]: command:GET http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu HTTP/1.1
+Host: www.chinanews.com
+X-WISETC-PARAM-nocache:
+Accept-Encoding:gzip, deflate
+Accept-Language: zh-cn
+User-Agent: Baiduspider-news+(+http://www.baidu.com/search/spider.htm)
+Connection: close
+
+
+TRACE: 12-11 16:15:37:  newsdiproxy. * 1493334368 [crawl_a_page]: parse Content-Length  Content-Length:75757 
+TRACE: 12-11 16:15:37:  newsdiproxy. * 1493334368 [work_thread_func]:  crawl the single page [http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] use time [0]
+TRACE: 12-11 16:15:37:  newsdiproxy. * 1493334368 [news_html_parse]: title node selected,url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] anchor[] xpath[(null)$0->h1$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] title[十八届三中全会今闭幕 中国改革将迈入新时代 ] a_dist[0.000000] t_dist[0.854167] score[1.281250] skip[58] total[4623]
+TRACE: 12-11 16:15:37:  newsdiproxy. * 1493334368 [news_html_parse]: time node selected,url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] str_time[2013年11月12日 00:02] xpath[(null)$0->div.left-t$0->div.left-time$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] pubtime[1384185720] 
+TRACE: 12-11 16:15:37:  newsdiproxy. * 1493334368 [news_html_parse]: text node selected, url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] xpath[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] belif[0.956730], extract at[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html] iNHP.iTpl 1
+NOTICE: 12-11 16:15:37:  newsdiproxy. * 1493334368 [news_html_parse]: url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu],not hit template 
+NOTICE: 12-11 16:15:38:  newsdiproxy. * 1493334368 [news_html_parse]: extract info, url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu], title[(null)$0->h1$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], time[(null)$0->div.left-t$0->div.left-time$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], text[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html], extract[div.left_zw$0->div#cont_1_1_2.content$0->div.con_left$0->div.div980$0->div#con$0->body$0->html],url2[(null)]
+NOTICE: 12-11 16:15:38:  newsdiproxy. * 1493334368 [put_npt_premcpack]: unknown imgurl:i3.chinanews.com/2011/news/images/1.png
+NOTICE: 12-11 16:15:38:  newsdiproxy. * 1493334368 [work_thread_func]: send newsdi of url[http://www.chinanews.com/gn/2013/11-12/5489300.shtml?f=baidu] ok,error no[0] all time use[1] 			       	process time use[1] queue wait time [0] queue len is[0] re_crawl_page_times [0]
+NOTICE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [work_thread_func]: "from" in mcpack,FROM_SMARTNEWS
+NOTICE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [crawl_a_page]: command:GET http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html HTTP/1.1
+Host: china.haiwainet.cn
+X-WISETC-PARAM-nocache:
+Accept-Encoding:gzip, deflate
+Accept-Language: zh-cn
+User-Agent: Baiduspider-news+(+http://www.baidu.com/search/spider.htm)
+Connection: close
+
+
+TRACE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [crawl_a_page]: parse Content-Length  Content-Length:42930 
+TRACE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [work_thread_func]:  crawl the single page [http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] use time [0]
+TRACE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [news_html_parse]: title node selected,url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] anchor[] xpath[(null)$0->h1.H01 tp05$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] title[中纪委：将适时清理官员住房、公车] a_dist[0.000000] t_dist[0.695652] score[1.043478] skip[45] total[13183]
+TRACE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [news_html_parse]: time node selected,url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] str_time[2013年12月11日08:13] xpath[(null)$0->span$0->p.tp03 qw03 tp05 sumry$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] pubtime[1386720780] 
+TRACE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [news_html_parse]: text node selected, url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] xpath[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] belif[0.263609], extract at[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] iNHP.iTpl 1
+TRACE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [news_html_parse]: url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html],content node hit template
+NOTICE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [news_html_parse]: extract info, url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html], title[(null)$0->h1.H01 tp05$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html], time[(null)$0->span$0->p.tp03 qw03 tp05 sumry$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html], text[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html], extract[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html],url2[(null)]
+NOTICE: 12-11 16:33:48:  newsdiproxy. * 1870969184 [work_thread_func]: send newsdi of url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] ok,error no[5] all time use[0] 			       	process time use[0] queue wait time [0] queue len is[0] re_crawl_page_times [0]
+NOTICE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [crawl_a_page]: command:GET http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html HTTP/1.1
+Host: china.haiwainet.cn
+X-WISETC-PARAM-nocache:
+Accept-Encoding:gzip, deflate
+Accept-Language: zh-cn
+User-Agent: Baiduspider-news+(+http://www.baidu.com/search/spider.htm)
+Connection: close
+
+
+TRACE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [crawl_a_page]: parse Content-Length  Content-Length:42930 
+TRACE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [work_thread_func]:  crawl the single page [http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] use time [0]
+TRACE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [news_html_parse]: title node selected,url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] anchor[] xpath[(null)$0->h1.H01 tp05$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] title[中纪委：将适时清理官员住房、公车] a_dist[0.000000] t_dist[0.695652] score[1.043478] skip[45] total[13183]
+TRACE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [news_html_parse]: time node selected,url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] str_time[2013年12月11日08:13] xpath[(null)$0->span$0->p.tp03 qw03 tp05 sumry$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] pubtime[1386720780] 
+TRACE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [news_html_parse]: text node selected, url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] xpath[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] belif[0.263609], extract at[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html] iNHP.iTpl 1
+TRACE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [news_html_parse]: url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html],content node hit template
+NOTICE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [news_html_parse]: extract info, url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html], title[(null)$0->h1.H01 tp05$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html], time[(null)$0->span$0->p.tp03 qw03 tp05 sumry$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html], text[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html], extract[div#con$0->div.w650 fl$0->div.m0 w980 mt10 bor03$0->body$0->html],url2[(null)]
+NOTICE: 12-11 16:46:35:  newsdiproxy. * 1996847456 [work_thread_func]: send newsdi of url[http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] ok,error no[0] all time use[0] 			       	process time use[0] queue wait time [0] queue len is[0] re_crawl_page_times [0]
+NOTICE: 12-11 16:46:54:  newsdiproxy. * 2080766304 [crawl_a_page]: command:GET http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html HTTP/1.1
+Host: china.haiwainet.cn
+X-WISETC-PARAM-nocache:
+Accept-Encoding:gzip, deflate
+Accept-Language: zh-cn
+User-Agent: Baiduspider-news+(+http://www.baidu.com/search/spider.htm)
+Connection: close
+
+
+TRACE: 12-11 16:46:54:  newsdiproxy. * 2080766304 [crawl_a_page]: parse Content-Length  Content-Length:42930 
+TRACE: 12-11 16:46:54:  newsdiproxy. * 2080766304 [work_thread_func]:  crawl the single page [http://china.haiwainet.cn/n/2013/1211/c345646-20022475.html] use time [0]
