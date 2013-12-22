@@ -7,6 +7,11 @@ import struct
 import collections
 import urlparse
 import heapq
+import urllib2
+import Queue
+import threading
+import time
+import json
 
 
 class LogRecordStreamHandler(SocketServer.StreamRequestHandler):
@@ -152,6 +157,115 @@ class Counter:
 							#if slave == "total"
 				], key = lambda tup: tup[2]
 				)
+
+class Request:	
+	def get(self, url):
+		#print "%s :download %s" %(ident, url)
+		s = urllib2.urlopen(url, timeout = 10)
+		l = s.read()
+		s.close()
+		return l
+		#logging.info("%s\t%s" %(e.message, url))
+
+class Validator:
+	def __init__(self, url, html):
+		self.d = json.loads(html)
+		self.u = url
+		self.validate()
+
+	def validate(self):
+		raise Exception("should use inherited class type !")
+
+
+class PcNewsValidator(Validator):
+
+	def validate_content(self, content):
+		if not isinstance(content, list):
+			raise Exception("content type wrong")
+		for i in content:
+			if "type" not in i or "data" not in i:
+				raise Exception("content field absent")
+			else:
+				i_type = i["type"]
+				if i_type not in ["image", "text"]:
+					raise Exception("content type unknown")
+				
+				i_data = i["data"]
+				if len(i_data) == 0:
+					raise Exception("content data empty")
+
+	def validate(self):
+
+		news = self.d
+		for i in ["title", "time", "author", "url", "isvideo", "content"]:
+			if i not in news:
+				raise Exception("news field absent")
+			elif len(news[i]) == 0:
+				raise Exception("news field empty!")
+			else:
+				pass
+
+		content = news["content"]
+		self.validate_content(content)
+
+		print "return data correct" 	
+
+
+class SmartNewsValidator(PcNewsValidator):
+	def validate(self):
+		if "errno" not in self.d:
+			raise Exception("parse data eror")
+		else:
+			error_no = self.d["errno"]
+		if error_no != 0 or "data" not in self.d or "news" not in self.d["data"]:
+			#raise Exception("data return false")
+			raise Exception("errno false or data and news not exist")
+		else:
+			news = self.d["data"]["news"][0]
+
+			for i in ["ts", "title", "url", "site", "content"]:
+				if len(news[i]) == 0:
+					raise Exception("news field empty")
+			else:
+				content = news["content"]
+				self.validate_content(content)
+
+		print "return data correct" 	
+
+
+class MultiTask:
+	def __init__(self, record, func):
+		if record == None:
+			raise Exception("record should not be none!")
+		if func == None:
+			raise Exception("a handle function should be provided")
+
+		self.q = Queue.Queue()
+
+		for i in record:
+			self.q.put(i)
+
+		self.f = func
+
+	def start_threads(self, thread_num = 1):
+
+		if (thread_num <= 0):
+			raise Exception("thread number must be a positive number!")
+
+		for i in range(thread_num):
+			w = threading.Thread(target = self.handle)
+			w.start()
+
+	def handle(self):
+		while not self.q.empty():
+			i = self.q.get()
+			self.f(i)
+			self.q.task_done()
+
+		#print "%s exit" %ident
+
+	def join(self):
+		self.q.join()
 	
 
 def main():
