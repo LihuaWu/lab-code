@@ -20,7 +20,6 @@ def printLog(record):
 def test_server():
 	tcp_server = server.LogRecordSocketReceiver()
 	print("About to start tcp server...") 
-	tcp_server.addTask(printLog)
 	tcp_server.serve_until_stopped()
 
 def test_task():
@@ -188,11 +187,15 @@ def formulate_dict2():
 
 	s.append(a)
 	return [k for k in s]
-		
+
+def test_db():
+	d = server.DB()
+	d.show()
 
 if __name__ == "__main__":
 	logging.basicConfig(format = "%(message)s", level = logging.INFO)
-	test_parser_2()
+	#test_db()
+	#test_parser_2()
 	#test_parser_mul()
 	#test_parser()
 	#test_json()
@@ -207,5 +210,5 @@ if __name__ == "__main__":
 	#test_func()
 
 	#test_task()
-	#test_server()
+	test_server()
 	pass
